@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/css.css">
+<body>
+<h1>INPUTS PATTERN</h1>
+
+<form>
+  <label >CURP</label>
+  <input type="text" id="curp" name="curp" pattern="[A-Z]{3,4}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[HM]{1}[A-Z]{6}[0-9]{1,2}" title="Ingrese una CURP válida" required>
+  <small>Ejemplo de CURP: <strong>GOMC030723HCMMNRA4</strong></small>
+  <input type="submit">
+</form>
+<form>
+    <label for="rfc">RFC:</label>
+    <input type="text" id="rfc" name="rfc" pattern="[A-Z]{3,4}\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])[A-Za-z0-9]{3}" title="Ingrese un RFC válido" required>
+    <small>Ejemplo de RFC: <strong>ABCD123456XYZ</strong></small>
+    <input type="submit">
+  </form>
+<form>
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" title="Ingrese una dirección de correo electrónico válida" required>
+    <input type="submit">
+</form>
+<form>
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido" required>
+    <small>Ejemplo de teléfono: <strong>1234567890</strong></small>
+    <input type="submit">
+</form>
+<form>
+    <label for="nss">Número de Seguridad Social:</label>
+    <input type="text" id="nss" name="nss" pattern="[0-9]{11}" title="Ingrese un NSS válido" required>
+    <small>Ejemplo de NSS: <strong>12345678901</strong></small>
+    <input type="submit">
+
+</form>
+
+</body>
+</html>
